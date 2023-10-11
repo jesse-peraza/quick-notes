@@ -19,7 +19,7 @@ export default function NotesListPage({notes, setNotes}) {
   return (
     <>
       <NewNoteForm setNewNotes={ setNewNotes } />
-      {notes ? notesList : 'No Notes Yet!'}
+      {notes.length ? notesList : 'No Notes Yet!'}
     </>
   );
 }
